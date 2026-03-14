@@ -1,0 +1,138 @@
+.app{
+    height: 100%;
+    overflow: auto;
+}
+.app .profile {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;   /* force horizontal layout */
+    align-items: center;   /* vertical alignment */
+}
+
+.app .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    margin-right: 20px;    /* spacing between img and info */
+    flex-shrink: 0;        /* keep image size fixed */
+}
+
+.app .profile .info {
+    display: flex;
+    flex-direction: column; /* stack name, role, bio, buttons */
+    justify-content: center; /* center content vertically */
+    background-color: #5b5959;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+.app .profile .info .name{
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+.app .profile .info .role{
+    font-size: 12pt;
+    color: #fefefe;
+    margin-bottom: 20px;
+}
+.app .profile .info .bio{
+    margin-bottom: 5px;
+}
+.app .profile .info button{
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 5px;
+}
+.app .profile .info .follow{
+    width: 75px;
+}
+.app .profile .info .message{
+    width: 75px;
+    background: #050505;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.app .status{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 100px;
+    width: 800px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.app .status .info{
+    text-align: center;
+}
+.app .status .info .value{
+    font-weight: bold;
+}
+.app .status .info .label{
+    color: #ccc;
+}
+@media(max-width: 768px){
+    .app{
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+    .app .profile{
+        width: 100%;
+        flex-direction: column;
+    }
+    .app .profile .info{
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .app .status{
+        width: 100%;
+    }
+} 
+
+/* Input box styles */
+.app .editor {
+    margin: 30px 15px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* spacing between inputs */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #5b5959;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.app .editor input {
+    padding: 10px;
+    margin:0 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 8pt;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.app .editor input:focus {
+    border-color: #050505;
+    box-shadow: 0 0 5px rgba(5, 5, 5, 0.3);
+}
+.app .editor h2{
+    padding:0;
+
+}
+/* Responsive adjustments */
+@media(max-width: 768px){
+    .app .editor {
+        width: 100%;
+    }
+    .app .editor input {
+        font-size: 11pt;
+    }
+}
