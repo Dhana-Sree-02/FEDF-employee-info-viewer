@@ -9,7 +9,7 @@ class App extends Component {
             employees: [
                 { name: "Dhana Sree", dept: "CSE", availability: "Available" },
                 { name: "Ramesh", dept: "ECE", availability: "Available" },
-                { name: "Priya", dept: "IT", availability: "Busy" }
+                { name: "Priya", dept: "IT", availability: "Unavailable" }
             ],
             selected: 0 // index of selected employee
         };
