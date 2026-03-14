@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   server:{port:30321,},
-  base:'/R-project2/',
+  base:'/FEDF-employee-info-viewer/',
 
 })

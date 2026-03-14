@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dhana-sree-02.github.io/R-project2",
+  "homepage": "https://dhana-sree-02.github.io/FEDF-employee-info-viewer/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
